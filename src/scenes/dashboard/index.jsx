@@ -1,7 +1,6 @@
 import { Box, Button, IconButton, Typography, useTheme } from "@mui/material";
 import Header from "../../components/Header";
 import { tokens } from "../../theme";
-import { mockTransactions } from "../../data/mockData";
 import DownloadOutlinedIcon from "@mui/icons-material/DownloadOutlined";
 import EmailIcon from "@mui/icons-material/Email";
 import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
@@ -12,7 +11,6 @@ import BarChart from "../../components/BarChart";
 import LineChart from "../../components/LineChart";
 import PieChart from "../../components/PieChart";
 import StatBox from "../../components/StatBox";
-import ProgressCircle from "../../components/ProgressCircle";
 import { useNavigate } from "react-router-dom";
 
 export default function Dashboard() {
