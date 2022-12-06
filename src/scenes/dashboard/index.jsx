@@ -18,11 +18,24 @@ export default function Dashboard() {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
-  const onDistributionBarClick = () => {
+  const onDistributionLineClick = () => {
     navigate("/line");
-  }
+  };
+
+  const onInvoicePieClick = () => {
+    navigate("/pie");
+  };
+
+  const onInvoiceBarClick = () => {
+    navigate("/bar");
+  };
+
+  const onClientLineClick = () => {
+    navigate("/clientline");
+  };
+
   return (
-    <Box m="20px">
+    <Box m="10px">
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
@@ -138,12 +151,12 @@ export default function Dashboard() {
         {/* Row 2 */}
         <Box
           gridColumn="span 6"
-          gridRow={{ lg: "span 2", xl: "span 3" }}
+          /* gridRow={{ lg: "span 2", xl: "span 3" }} */
+          gridRow="span 2"
           backgroundColor={colors.primary[400]}
-          onClick={onDistributionBarClick}
         >
           <Box
-            mt="25px"
+            mt="0px"
             p="0 30px"
             display="flex "
             justifyContent="space-between"
@@ -173,18 +186,19 @@ export default function Dashboard() {
               </IconButton>
             </Box>
           </Box>
-          <Box border='1px solid red' height="90%" m="-30px 0 0 0">
+          <Box height="85%" onClick={onDistributionLineClick}>
             <LineChart />
           </Box>
         </Box>
 
         <Box
           gridColumn="span 6"
-          gridRow={{ lg: "span 2", xl: "span 3" }}
+          /* gridRow={{ lg: "span 2", xl: "span 3" }} */
+          gridRow="span 2"
           backgroundColor={colors.primary[400]}
         >
           <Box
-            mt="25px"
+            mt="0px"
             p="0 30px"
             display="flex "
             justifyContent="space-between"
@@ -214,7 +228,7 @@ export default function Dashboard() {
               </IconButton>
             </Box>
           </Box>
-          <Box height="90%" m="-30px 0 0 0">
+          <Box height="85%" onClick={onInvoicePieClick}>
             <PieChart />
           </Box>
         </Box>
@@ -222,11 +236,12 @@ export default function Dashboard() {
         {/* ROW 3 */}
         <Box
           gridColumn="span 6"
-          gridRow={{ lg: "span 2", xl: "span 3" }}
+          /*  gridRow={{ lg: "span 2", xl: "span 3" }} */
+          gridRow="span 2"
           backgroundColor={colors.primary[400]}
         >
           <Box
-            mt="25px"
+            mt="0px"
             p="0 30px"
             display="flex "
             justifyContent="space-between"
@@ -238,7 +253,7 @@ export default function Dashboard() {
                 fontWeight="600"
                 color={colors.grey[100]}
               >
-                Invoice
+                Invoice State
               </Typography>
               {/*  <Typography
                 variant="h3"
@@ -256,18 +271,19 @@ export default function Dashboard() {
               </IconButton>
             </Box>
           </Box>
-          <Box height="90%" m="-30px 0 0 0">
+          <Box height="85%" onClick={onInvoiceBarClick}>
             <BarChart />
           </Box>
         </Box>
 
         <Box
           gridColumn="span 6"
-          gridRow={{ lg: "span 2", xl: "span 3" }}
+          /* gridRow={{ lg: "span 2", xl: "span 3" }} */
+          gridRow="span 2"
           backgroundColor={colors.primary[400]}
         >
           <Box
-            mt="25px"
+            mt="0px"
             p="0 30px"
             display="flex "
             justifyContent="space-between"
@@ -297,7 +313,7 @@ export default function Dashboard() {
               </IconButton>
             </Box>
           </Box>
-          <Box height="90%" m="-30px 0 0 0">
+          <Box height="85%" onClick={onClientLineClick}>
             <ClientLineChart />
           </Box>
         </Box>

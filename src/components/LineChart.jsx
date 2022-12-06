@@ -46,7 +46,7 @@ const LineChart = ({ isDashboard = false }) => {
       enableGridX={false}
       /* enableGridY={false} */
       enableArea={true}
-      lineWidth={4}
+      lineWidth={2}
       colors={{ datum: "color" }}
       //   colors={isDashboard ? { datum: "color" } : { scheme: "nivo" }}
       margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
@@ -68,7 +68,7 @@ const LineChart = ({ isDashboard = false }) => {
         tickPadding: 5,
         tickRotation: 0,
         legend: isDashboard ? undefined : "Month of the year",
-        legendOffset: 36,
+        legendOffset: 40,
         legendPosition: "middle",
       }}
       axisLeft={{
@@ -78,12 +78,12 @@ const LineChart = ({ isDashboard = false }) => {
         tickPadding: 5,
         tickRotation: 0,
         legend: isDashboard ? undefined : "count",
-        legendOffset: -40,
+        legendOffset: -45,
         legendPosition: "middle",
       }}
-      pointSize={10}
+      pointSize={5}
       pointColor={{ theme: "background" }}
-      pointBorderWidth={2}
+      pointBorderWidth={3}
       pointBorderColor={{ from: "serieColor" }}
       pointLabelYOffset={-12}
       useMesh={true}

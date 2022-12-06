@@ -11,7 +11,6 @@ export default function BarChart({ isDashboard = false }) {
     <ResponsiveBar
       data={data}
       theme={{
-        fontSize: 14,
         axis: {
           domain: {
             line: {
@@ -21,7 +20,7 @@ export default function BarChart({ isDashboard = false }) {
           legend: {
             text: {
               fill: colors.grey[100],
-              fontSize: "14px",
+              /* fontSize: "14px", */
             },
           },
           ticks: {
@@ -31,14 +30,14 @@ export default function BarChart({ isDashboard = false }) {
             },
             text: {
               fill: colors.grey[100],
-              fontSize: "14px",
+              /* fontSize: "14px", */
             },
           },
         },
         legends: {
           text: {
             fill: colors.grey[100],
-            fontSize: "14px",
+           /*  fontSize: "14px", */
           },
         },
       }}
@@ -102,7 +101,7 @@ export default function BarChart({ isDashboard = false }) {
       axisLeft={{
         tickSize: 0,
         tickPadding: 5,
-        tickRotation: -45,
+        tickRotation: 0,
         legend: isDashboard ? undefined : "Number",
         legendPosition: "middle",
         legendOffset: -40,
@@ -118,7 +117,7 @@ export default function BarChart({ isDashboard = false }) {
           justify: false,
           translateX: 120,
           translateY: 0,
-          itemsSpacing: 2,
+          itemsSpacing: 5,
           itemWidth: 100,
           itemHeight: 20,
           itemDirection: "left-to-right",
