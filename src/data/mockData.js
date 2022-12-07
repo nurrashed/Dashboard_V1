@@ -411,6 +411,69 @@ export const mockBarData = [
   },
 ];
 
+export const mockClientsBarData = [
+  {
+    month: "2022-01",
+    client: 4,
+    clientColor: "#82d926",
+  },
+  {
+    month: "2022-02",
+    client: 6,
+    clientColor: "#82d926",
+  },
+  {
+    month: "2022-03",
+    client: 8,
+    clientColor: "#82d926",
+  },
+  {
+    month: "2022-04",
+    client: 10,
+    clientColor: "#82d926",
+  },
+  {
+    month: "2022-05",
+    client: 12,
+    clientColor: "#82d926",
+  },
+  {
+    month: "2022-06",
+    client: 20,
+    clientColor: "#82d926",
+  },
+  {
+    month: "2022-07",
+    client: 24,
+    clientColor: "#82d926",
+  },
+  {
+    month: "2022-08",
+    client: 24,
+    clientColor: "#82d926",
+  },
+  {
+    month: "2022-09",
+    client: 26,
+    clientColor: "#82d926",
+  },
+  {
+    month: "2022-10",
+    client: 17,
+    clientColor: "#82d926",
+  },
+  {
+    month: "2022-11",
+    client: 28,
+    clientColor: "#82d926",
+  },
+  {
+    month: "2022-12",
+    client: 32,
+    clientColor: "#82d926",
+  },
+];
+
 export const mockPieData = [
   {
     id: "sent out",

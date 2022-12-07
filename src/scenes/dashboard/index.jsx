@@ -6,7 +6,8 @@ import EmailIcon from "@mui/icons-material/Email";
 import PointOfSaleIcon from "@mui/icons-material/PointOfSale";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
 import TrafficIcon from "@mui/icons-material/Traffic";
-import ClientLineChart from "../../components/ClientLineChart";
+/* import ClientLineChart from "../../components/ClientLineChart"; */
+import ClientsBarChart from "../../components/ClientsBarChart";
 import BarChart from "../../components/BarChart";
 import LineChart from "../../components/LineChart";
 import InvoiceOverviewLine from "../../components/InvoiceOverviewLine";
@@ -38,7 +39,11 @@ export default function Dashboard() {
     navigate("/invoiceOverviewline");
   };
 
-  ;
+  const onClientBarClick = () => {
+    navigate("/clientBar");
+  };
+
+
 
   return (
     <Box m="10px">
@@ -319,8 +324,8 @@ export default function Dashboard() {
               </IconButton>
             </Box>
           </Box>
-          <Box height="85%" onClick={onClientLineClick}>
-            <ClientLineChart />
+          <Box height="85%" onClick={onClientBarClick}>
+            <ClientsBarChart />
           </Box>
         </Box>
       </Box>

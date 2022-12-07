@@ -5,8 +5,8 @@ import LineChart from "../../components/LineChart";
 const Line = () => {
   return (
     <Box m="20px">
-      <Header title="Line Chart" subtitle="Nordfin Line Chart" />
-      <Box height="75vh" border='1px solid red'>
+      <Header title="Distribution" subtitle="Nordfin Distribution per-month" />
+      <Box height="75vh">
         <LineChart />
       </Box>
     </Box>

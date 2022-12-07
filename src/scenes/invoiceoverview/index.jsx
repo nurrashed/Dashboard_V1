@@ -5,7 +5,7 @@ import InvoiceOverviewLine from "../../components/InvoiceOverviewLine";
 const InvoiceOverview = () => {
   return (
     <Box m="20px">
-      <Header title="Payment status" subtitle="Nordfin Payment status" />
+      <Header title="Invoice Overview" subtitle="Nordfin Invoice Overview" />
       <Box height="75vh">
         <InvoiceOverviewLine />
       </Box>
