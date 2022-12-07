@@ -43,8 +43,6 @@ export default function Dashboard() {
     navigate("/clientBar");
   };
 
-
-
   return (
     <Box m="10px">
       {/* HEADER */}
@@ -85,7 +83,7 @@ export default function Dashboard() {
         >
           <StatBox
             title="10,472"
-            subtitle="Invoice sentout of the previous month"
+            subtitle="Sent invoices last month"
             progress="0.5"
             increase="+15%"
             icon={
@@ -306,7 +304,7 @@ export default function Dashboard() {
                 fontWeight="600"
                 color={colors.grey[100]}
               >
-                Clients Per-month
+                Number of clients
               </Typography>
               {/* <Typography
                 variant="h3"

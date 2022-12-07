@@ -5,10 +5,7 @@ import ClientsBarChart from "../../components/ClientsBarChart";
 const ClientsBar = () => {
   return (
     <Box m="20px">
-      <Header
-        title="Clients per-month"
-        subtitle="Nordfin Clients per-month"
-      />
+      <Header title="Number of clients" subtitle="Nordfin Number of clients" />
       <Box height="75vh">
         <ClientsBarChart />
       </Box>
