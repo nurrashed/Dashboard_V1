@@ -9,7 +9,7 @@ import TrafficIcon from "@mui/icons-material/Traffic";
 import ClientLineChart from "../../components/ClientLineChart";
 import BarChart from "../../components/BarChart";
 import LineChart from "../../components/LineChart";
-import PieChart from "../../components/PieChart";
+import InvoiceOverviewLine from "../../components/InvoiceOverviewLine";
 import StatBox from "../../components/StatBox";
 import { useNavigate } from "react-router-dom";
 
@@ -34,11 +34,17 @@ export default function Dashboard() {
     navigate("/clientline");
   };
 
+  const onInvoiceOverviewClick = () => {
+    navigate("/invoiceOverviewline");
+  };
+
+  ;
+
   return (
     <Box m="10px">
       {/* HEADER */}
       <Box display="flex" justifyContent="space-between" alignItems="center">
-        <Header title="DASHBOARD" subtitle="Welcome to your dashboard" />
+        <Header title="DASHBOARD" subtitle="Welcome to Nordfin dashboard" />
         <Box>
           <Button
             sx={{
@@ -228,8 +234,8 @@ export default function Dashboard() {
               </IconButton>
             </Box>
           </Box>
-          <Box height="85%" onClick={onInvoicePieClick}>
-            <PieChart />
+          <Box height="85%" onClick={onInvoiceOverviewClick}>
+            <InvoiceOverviewLine />
           </Box>
         </Box>
 
@@ -295,7 +301,7 @@ export default function Dashboard() {
                 fontWeight="600"
                 color={colors.grey[100]}
               >
-                Clients
+                Clients Per-month
               </Typography>
               {/* <Typography
                 variant="h3"

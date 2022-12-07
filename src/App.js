@@ -14,6 +14,9 @@ import Bar from "./scenes/bar";
 import Line from "./scenes/line";
 import Pie from "./scenes/pie";
 import ClientLine from "./scenes/clientline";
+import InvoiceOverview from "./scenes/invoiceoverview";
+
+
 // import Geography from "./scenes/geography";
 
 function App() {
@@ -38,6 +41,10 @@ function App() {
               <Route path="/pie" element={<Pie />} />
               <Route path="/line" element={<Line />} />
               <Route path="/clientline" element={<ClientLine />} />
+              <Route
+                path="/invoiceOverviewline"
+                element={<InvoiceOverview />}
+              />
               {/* <Route path="/geography" element={<Geography />} /> */}
             </Routes>
           </main>
